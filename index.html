@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Font awesome icons -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ccbd4d6bc1.js" crossorigin="anonymous"></script>
 
 </head>
@@ -24,15 +25,15 @@
 <body>
     <nav class="deep-purple darken-1">
         <div class="container">
-            <a href="#" class="brand-logo">3MSCHOOL</a>
+            <a id="area_top" class="brand-logo">3MSCHOOL</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="fas fa-bars"></i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="area_temas">Sobre nosotros</a></li>
-                <li><a href="area_cursos">Temas comunes</a></li>
-                <li><a href="area_servicios">Servicios</a></li>
+                <li><a href="#area_inicio">Inicio</a></li>
+                <li><a href="#area_temas">Temas comunes</a></li>
+                <li><a href="#area_cursos">Cursos</a></li>
+                <li><a href="#area_servicios">Servicios</a></li>
             </ul>
             <ul id="mobile-demo" class="sidenav">
                 <li>
@@ -62,7 +63,9 @@
     </nav>
     <header class="white-text valign-wrapper">
         <div style="position: relative;" class="container">
-            <h1>3MSCHOOL</h1>
+            <a id="area_inicio">
+                <h1>3MSCHOOL</h1>
+            </a>
             <p class="gray-text">Estudia los temas de tu interes con facilidad.</p>
             <a class="deep-purple waves-effect waves-light btn">
                 <i class="fab far fa-star left"></i>
@@ -74,108 +77,105 @@
     <div class="container">
         <a id="area_temas">
             <h3>Temas comunes</h3>
-            <section>
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card hoveable">
-                            <div class="card-image">
-                                <img src="https://picsum.photos/id/1059/600/400">
-                                <span class="card-title">Artes y pintura</span>
-                                <a class="btn-floating halfway-fab waves-effect waves-light deep-purple">
-                                    <span class="material-icons-outlined">
-                                        add
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="card-content">
-                                <p>Podras estudiar las diferentes tecnicas de dibujo, empapelado y plastificacion de
-                                    nuestros cursos de arte moderno y pintura.</p>
-                            </div>
+        </a>
+        <section>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card hoveable">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/id/1059/600/400">
+                            <span class="card-title">Artes y pintura</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light deep-purple">
+                                <i class="fa fa-plus fa-2x white-text" aria-hidden="true"></i>
+                            </a>
                         </div>
-                    </div>
-                    <div class="col s12 m6">
-                        <div class="card hoveable">
-                            <div class="card-image">
-                                <img src="https://picsum.photos/id/1060/600/400">
-                                <span class="card-title">Cocina</span>
-                                <a class="btn-floating halfway-fab waves-effect waves-light deep-purple">
-                                    <span class="material-icons-outlined">
-                                        add
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="card-content">
-                                <p>Aprende las mejores tecnicas de cocina asi como los basicos de la preparación de
-                                    alimentos y diferentes tipos de cocción con nuestros cursos</p>
-                            </div>
+                        <div class="card-content">
+                            <p>Podras estudiar las diferentes tecnicas de dibujo, empapelado y plastificacion de
+                                nuestros cursos de arte moderno y pintura.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </a>
+                <div class="col s12 m6">
+                    <div class="card hoveable">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/id/1060/600/400">
+                            <span class="card-title">Cocina</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light deep-purple">
+                                <i class="fa fa-plus fa-2x white-text" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <p>Aprende las mejores tecnicas de cocina asi como los basicos de la preparación de
+                                alimentos y diferentes tipos de cocción con nuestros cursos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <a id="area_cursos">
             <h3>Cursos y experiencias</h3>
-            <section>
-                <div class="row">
-                    <div class="col s12 m6 align-right valign-wrapper">
-                        <img src="https://picsum.photos/id/1073/600/400" style="height: 100%; width: 100%;">
-                    </div>
-                    <div class="col s12 m6 align-right valign-wrapper">
-                        <img src="https://picsum.photos/id/1080/600/400" style="height: 100%; width: 100%;">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m6 align-right valign-wrapper">
-                        <img src="https://picsum.photos/id/119/600/400" style="height: 100%; width: 100%;">
-                    </div>
-                    <div class="col s12 m6 align-right valign-wrapper">
-                        <img src="https://picsum.photos/id/134/600/400" style="height: 100%; width: 100%;">
-                    </div>
-                </div>
-                <div class="section">
-                    <p class="grey-text">Eso y mas te espera con nuestros cursos.</p>
-                    <a class="deep-purple waves-effect waves-light btn pulse">Más cursos!</a>
-                </div>
-            </section>
         </a>
+        <section>
+            <div class="row">
+                <div class="col s12 m6 align-right valign-wrapper">
+                    <img src="https://picsum.photos/id/1073/600/400" style="height: 100%; width: 100%;">
+                </div>
+                <div class="col s12 m6 align-right valign-wrapper">
+                    <img src="https://picsum.photos/id/1080/600/400" style="height: 100%; width: 100%;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 align-right valign-wrapper">
+                    <img src="https://picsum.photos/id/119/600/400" style="height: 100%; width: 100%;">
+                </div>
+                <div class="col s12 m6 align-right valign-wrapper">
+                    <img src="https://picsum.photos/id/134/600/400" style="height: 100%; width: 100%;">
+                </div>
+            </div>
+            <div class="section">
+                <p class="grey-text">Eso y mas te espera con nuestros cursos.</p>
+                <a class="deep-purple waves-effect waves-light btn pulse">Más cursos!</a>
+            </div>
+        </section>
         <a id="area_servicios">
             <h3>Servicios</h3>
-            <section>
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="section">
-                            <i class="fas fa-globe fa-3x deep-purple-text"></i>
-                            <h4>Asesorias Online</h4>
-                            <p class="grey-text">Podras contactar profesores y maestros en la asignacion de tu
-                                preferencia
-                                mediante nuestro chat disponible 24/7</p>
-                        </div>
-                        <div class="divider"></div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="section">
-                            <i class="fas fa-solid fa-handshake-angle fa-3x deep-purple-text"></i>
-                            <h4>Grupos de ayuda</h4>
-                            <p class="grey-text">Incorporate a grupos con otros estudiantes para compartir tus
-                                aprendizajes
-                                y aprender juntos!</p>
-                        </div>
-                        <div class="divider"></div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="section">
-                            <i class="fas fa-solid fa-clapperboard-play fa-3x deep-purple-text"></i>
-                            <h4>Grabaciones y practicas</h4>
-                            <p class="grey-text">Accede a todas las sesiones las veces que quieras desde nuestra
-                                libreria
-                                digital en cualquier momento!</p>
-                        </div>
-                        <div class="divider"></div>
-                    </div>
-                </div>
-
-            </section>
         </a>
+        <section>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="section">
+                        <i class="fa fa-globe fa-3x deep-purple-text" aria-hidden="true"></i>
+                        <h4>Asesorias Online</h4>
+                        <p class="grey-text">Podras contactar profesores y maestros en la asignacion de tu
+                            preferencia
+                            mediante nuestro chat disponible 24/7</p>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="section">
+                        <i class="fa fa-medkit fa-3x deep-purple-text" aria-hidden="true"></i>
+                        <h4>Grupos de ayuda</h4>
+                        <p class="grey-text">Incorporate a grupos con otros estudiantes para compartir tus
+                            aprendizajes
+                            y aprender juntos!</p>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="section">
+                        <i class="fa fa-video-camera fa-3x deep-purple-text" aria-hidden="true"></i>
+                        <h4>Grabaciones y practicas</h4>
+                        <p class="grey-text">Accede a todas las sesiones las veces que quieras desde nuestra
+                            libreria
+                            digital en cualquier momento!</p>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+
+        </section>
+
     </div>
     <footer class="page-footer deep-purple darken-1">
         <div class="container">
@@ -189,10 +189,10 @@
                 <div class="col l4 offset-12 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Temas</a></li>
-                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#area_top">Inicio</a></li>
+                        <li><a href="#area_temas">Temas comunes</a></li>
+                        <li><a href="#area_cursos">Cursos</a></li>
+                        <li><a href="#area_servicios">Servicios</a></li>
                     </ul>
                 </div>
             </div>
@@ -200,7 +200,7 @@
         <div class="footer-copyright">
             <div class="container">
                 ® 2022 copyright 3MSCHOOL
-                <a class="grey-text text-lighten-4 right" href="#!">Back to top</a>
+                <a class="grey-text text-lighten-4 right" href="#area_top">Back to top</a>
             </div>
         </div>
     </footer>
