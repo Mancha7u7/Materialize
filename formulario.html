@@ -31,9 +31,9 @@
 			</a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="index.html">Temas comunes</a></li>
-				<li><a href="index.html">Cursos</a></li>
-				<li><a href="index.html">Servicios</a></li>
+				<li><a href="index.html#area_temas">Temas comunes</a></li>
+				<li><a href="index.html#area_cursos">Cursos</a></li>
+				<li><a href="index.html#area_servicios">Servicios</a></li>
 			</ul>
 			<ul id="mobile-demo" class="sidenav">
 				<li>
@@ -82,42 +82,135 @@
 
 	<body>
 		<div class="container">
-			<form class="col s12" action="registro.php" method="POST">
+			<form class="col s12" action="controller.php" method="POST">
 				<div class="row">
 					<div class="input-field col s6">
-						<input placeholder="Nombre" id="first_name" type="text" class="validate">
+						<input name="nombreuser" placeholder="Nombre" id="first_name" type="text" class="validate">
 						<label for="first_name">Nombre</label>
 					</div>
 					<div class="input-field col s6">
-						<input id="last_name" type="text" class="validate">
+						<input name="apellidosuser" id="last_name" type="text" class="validate">
 						<label for="last_name">Apellido</label>
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<input placeholder="Respuesta ..." id="p1" type="text" class="validate">
-						<label for="p1">¿Como observas la pagina de bienvenida?</label>
+						<input name="emailuser" id="email" type="email" class="validate" name="email">
+						<label for="email">Email de contacto</label>
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<input id="email" type="email" class="validate" name="email">
-						<label for="email">Email</label>
+						<input name="pre1" placeholder="Respuesta ..." id="p1" type="text" class="validate">
+						<label for="p1">P1: ¿Como observas la pagina de bienvenida?</label>
 					</div>
 				</div>
 				<div class="row">
-					<div class="input-field col s6">
-						<label><input type="submit" value="Registrarme"></input></label>
-					</div>
-					<div class="input-field col s6">
-
-						<label><input type="reset" value="Reestablecer"></input></label>
+					<div class="input-field col s12">
+						<input name="pre2" placeholder="Respuesta ..." id="p2" type="text" class="validate">
+						<label for="p2">P2: ¿Te interesa algun curso con solo visitar la pagina principal?</label>
 					</div>
 				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input name="pre3" placeholder="Respuesta ..." id="p3" type="text" class="validate">
+						<label for="p3">P3: ¿Que cursos te interesaria que añadamos a nuestro catalogo?</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input name="pre4" placeholder="Respuesta ..." id="p4" type="text" class="validate">
+						<label for="p4">P4: ¿Cual es tu metodo de aprendizaje online favorito? (videos, revistas,
+							tutoriales, etc.)</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input name="pre5" placeholder="Respuesta ..." id="p5" type="text" class="validate">
+						<label for="p5">P5: ¿Te inspira confianza adquirir habilidades en una plataforma
+							digital?</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input name="pre6" placeholder="Respuesta ..." id="p6" type="text" class="validate">
+						<label for="p6">P6: ¿Los textos y colores te parecen ser comodos y utiles para encontrar
+							informacion?</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input name="pre17" placeholder="Respuesta ..." id="p7" type="text" class="validate">
+						<label for="p7">P7: ¿Como nos conociste?</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input name="pre8" placeholder="Respuesta ..." id="p8" type="text" class="validate">
+						<label for="p8">P8: ¿Recomendarias esta herramienta a familiares y amigos?</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input name="pre9" placeholder="Respuesta ..." id="p9" type="text" class="validate">
+						<label for="p9">P9: ¿Desde que dispositivo sueles utilizar estas herramientas?</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input name="pre10" placeholder="Respuesta ..." id="p10" type="text" class="validate">
+						<label for="p10">P10: Cuentanos ¿Hay algo mas que debamos de saber sobre tu experiencia?</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s3"></div>
+					<div class="input-field col s4">
+						<label><input type="submit" value="Registrarme"
+								class="deep-purple waves-effect waves-light btn pulse"></a></input></label>
+					</div>
+					<div class="input-field col s4">
 
+						<label><input type="reset" value="Reestablecer"
+								class="deep-purple waves-effect waves-light btn pulse"></input></label>
+					</div>
+					<div class="col s1"></div>
+				</div>
+				<div class="row">
+					<div class="section"></div>
+					<div class="section"></div>
+					<div class="section"></div>
+				</div>
 			</form>
 	</body>
 	</div>
+	<footer class="page-footer deep-purple darken-1">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">3MSCHOOL</h5>
+					<p class="grey-text text-lighten-4">Somos una empresa educativa que busca apoyar a jovenes y adultos
+						a adquirir las maximas competencias posibles de sus habilidades mediaten contenido interactivo y
+						cursos dirigidos por profesionales en el tema.</p>
+				</div>
+				<div class="col l4 offset-12 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="index.html#area_temas">Temas comunes</a></li>
+						<li><a href="index.html#area_cursos">Cursos</a></li>
+						<li><a href="index.html#area_servicios">Servicios</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				® 2022 copyright 3MSCHOOL
+				<a class="grey-text text-lighten-4 right" href="#area_top">Back to top</a>
+			</div>
+		</div>
+	</footer>
+
 	<!--JavaScript at end of body for optimized loading-->
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 
